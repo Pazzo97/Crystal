@@ -8,4 +8,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  root "home#index"
+
+  resources 'categories', only: %w[index new create] do
+    resources 'transactions', only: %w[index]
+  end
+
+  resources 'transactions', only: %w[new create]
 end

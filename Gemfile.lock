@@ -278,7 +278,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  capybara
+  capybara (~> 3.37)
   debug
   devise
   importmap-rails

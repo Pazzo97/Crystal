@@ -1,3 +1,5 @@
+require_relative '../rails_helper'
+
 RSpec.describe 'Categories Page', type: :system do
   include Devise::Test::IntegrationHelpers
   before :all do
@@ -11,10 +13,14 @@ RSpec.describe 'Categories Page', type: :system do
     sign_in @user
   end
 
-  describe 'GET /index' do
-    it 'returns http success' do
-      get categories_path
-      expect(response).to have_http_status(:success)
-    end
+  it 'has the category name' do
+    visit '/'
+    expect(page).to have_content(@category.name)
+  end
+
+  it 'should redirect to add new category' do
+    visit '/'
+    click_on 'Add Category'
+    expect(page).to have_current_path(new_category_path)
   end
 end

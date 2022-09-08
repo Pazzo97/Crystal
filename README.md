@@ -7,7 +7,7 @@
 
 ## Demo
 
-[Live link]()
+[Live link](https://crystal-budget0.herokuapp.com/)
 
 [Video Presentation](https://www.loom.com/share/08a548c341774b3087a83efe5e8de6bb)
 

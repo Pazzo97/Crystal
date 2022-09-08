@@ -1,4 +1,7 @@
 $primary-color: #6c63ff;
+$secondary-color: #3778c2;
+$tertiary-color: #fff;
+
 // Entry point for your Sass build
 
 body {
@@ -18,4 +21,18 @@ body {
 .btn-primary {
   background-color: $primary-color !important;
   border: 1px solid $primary-color !important;
+}
+
+.nav-back {
+  background-color: $secondary-color !important;
+}
+
+.app-header {
+  color: $tertiary-color;
+  font-size: 1.8rem;
+}
+
+.categories-text {
+  color: $tertiary-color;
+  font-size: 1.2rem;
 }

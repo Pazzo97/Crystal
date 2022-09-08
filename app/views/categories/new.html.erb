@@ -19,8 +19,8 @@
                   </div>
                   <div class="d-flex flex-row align-items-center mb-4">
                     <div class="form-outline flex-fill mb-0">
-                      <%= f.select :icon, @icons.map { |v| [v.split('-').join(' ').upcase_first, "fa-#{v}"] }, {}, autocomplete: "name", class: 'form-control' %>
-                      <%= f.label :name, 'Category name', class: 'form-label' %>
+                      <%= f.select :icon, @icons.map { |v| [v.split('-').join(' ').upcase_first, "fa-#{v}"] }, {}, autocomplete: "icon", class: 'form-control' %>
+                      <%= f.label :icon, 'Category icon', class: 'form-label' %>
                     </div>
                   </div>
 
@@ -32,7 +32,7 @@
               </div>
               <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                <img src="<%= image_path 'register' %>"
+                <img src="<%= image_path 'register.svg' %>"
                      class="img-fluid" alt="Sample image">
 
               </div>

@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Patrick MUKUNZI Bush**
+👤 **Patrick MUKUNZI**
 
 - GitHub: [@Patrick](https://github.com/Pazzo97)
 - Twitter: [@Patrick](https://twitter.com/mukunzipat)

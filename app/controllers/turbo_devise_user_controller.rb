@@ -1,4 +1,4 @@
-class TurboDeviseController < ApplicationController
+class TurboDeviseUserController < ApplicationController
   class Responder < ActionController::Responder
     def to_turbo_stream
       controller.render(options.merge(formats: :html))
